@@ -1,5 +1,15 @@
 <div class="row">
   <h1>Settings</h1>
-
-  To Do: UI to add colors to the game.
+  <div class = "container" col-md-4>
+    <form>
+      <label for ="color">Enter a Color:</label>
+      <input type "text" name= "color" ng-model = "formColor"/>
+      <button class = "btn btn-default" ng-click="addColor()">Add Color</button>
+      <p>Sample Colors: Aqua, Crimson, and Orange</p>
+    </form>
+  </div>
+  <div id="button-container">
+    <h4>Click on the color you wish to remove:</h4>
+    <div class="color-button" ng-repeat="color in colors" ng-style="{background: color}" ng-click="colors.splice($index, 1)"></div>
+  </div>
 </div>

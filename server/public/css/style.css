@@ -1,7 +1,6 @@
 main {
-  margin: 50px;
+  margin: 10px;
 }
-
 #gameview {
   width: 90%;
   margin: 20px;
@@ -12,4 +11,7 @@ main {
     float: left;
     margin: 10px;
     cursor: pointer;
+}
+.container{
+  border-style: groove;
 }
